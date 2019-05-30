@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Somatic;
+    src: url("../fonts/Somatic-Rounded.otf");
+}
+
+:root {
+    --primary: #007aff;
+    --root: #f9fafc;
+}
+
+body {
+    margin:0;
+    width:100%;
+    background-color:var(--root);
+}
+
+* { font-family: Somatic, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; box-sizing: border-box; }
+
+::-webkit-scrollbar {
+    background-color:var(--root);
+}
+
+::-webkit-scrollbar-thumb {
+    width:7px;
+    height:7px;
+    background-color:var(--primary);
+    border-radius: 4px;
+}
+
+::selection, ::-webkit-selection {
+    background-color:rgba(0,123,255,.25);
+}
+
+#coding-club {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    min-height: 100vh;
+}
+
+#koishi {
+    width:183px;
+    height:251px;
+}
+
+#title {
+    text-align: center;
+    display:block;
+    width:100%;
+    color:var(--primary);
+    margin:30px 0 0 0;
+    cursor:default;
+}
+@media screen and (max-height: 568px){
+    #coding-club {
+        flex-direction: row !important;
+        padding:0 7.5% !important;
+    }
+}
